@@ -1,0 +1,30 @@
+.container {
+  width: 100vw;
+  height: 650px;
+  background: url('../Assets/background.jpg') no-repeat;
+  background-size: cover;
+  border-radius: 0 0 200px 0;
+  border-bottom: 1px solid;
+}
+
+.nav_container{
+  max-width: 80rem;
+  margin: 0 auto;
+  padding-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.infos {
+  max-width: 25%;
+  margin: 130px 0 0 150px;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.infos h2 {
+  margin: 1rem 0;
+  color: rgba(201, 201, 201, 0.801);
+}

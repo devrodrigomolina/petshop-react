@@ -1,0 +1,18 @@
+.ul {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+a {
+  color: white;
+  transition: all .3s;
+}
+a:hover {
+  color: #f3d097;
+}
+
