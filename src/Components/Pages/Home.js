@@ -3,9 +3,9 @@ import Cards from '../Cards/Cards'
 import Marcas from '../Marcas/Marcas'
 import Title from '../Title'
 import style from './Home.module.css'
-import destaque from '../Assets/Produtos/3.png'
 import Produtos from '../Produtos/Produtos'
-
+import ProdutoDestaque from '../Produtos/ProdutoDestaque'
+import banner from '../Assets/frete.png'
 const Home = () => {
   return (
     <div className={style.home}>
@@ -22,16 +22,16 @@ const Home = () => {
       <Title text='Destaques da semana' />
       <div className={style.container_destaques}>
         <div>
-          <h1>Produtos em destaque</h1>
-          <img style={{width: '400px'}} src={destaque}/>
-          <p style={{width: '400px'}}>O alimento para gatos WHISKAS® é nutricionalmente completo e balanceado, com um ótimo equilíbrio de vitaminas e minerais para ajudá-lo a fornecer os melhores cuidados para o seu gato adulto. As necessidades nutricionais do seu gato mudam ao longo do tempo. É por isso que o alimento seco para gatos WHISKAS® 1+ anos é especialmente desenvolvido para gatos curiosos proporcionando a eles todos os nutrientes e energia necessários para explorar o mundo. WHISKAS®, ALIMENTE A CURIOSIDADE. Visite o veterinário regularmente. Mantenha sempre água fresca à disposição do seu gato. Modo de Conservação: Conservar o produto em sua embalagem original, devidamente fechada, em local seco e fresco.</p>
+          <ProdutoDestaque />
         </div>
 
         <div>
           <Produtos />  
         </div>
-
       </div>
+        <div style={{margin: '20px auto', width: '75vw'}}>
+          <img style={{width: '100%', marginTop: '60px'}} src={banner} />
+        </div>
     </div>
   )
 }
