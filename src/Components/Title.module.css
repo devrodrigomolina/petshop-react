@@ -1,0 +1,6 @@
+.title {
+  text-align: center;
+  color: var(--primary-color);
+  position: relative;
+  margin: 4rem 0;
+}
