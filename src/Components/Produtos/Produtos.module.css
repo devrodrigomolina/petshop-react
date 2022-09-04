@@ -1,0 +1,20 @@
+.container_produtos {
+  width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  margin-top: 4rem;
+  justify-content: center;
+  gap: 10px;
+}
+
+.img {
+  width: 200px;
+}
+
+.cards_produtos {
+  width: 100%;
+  padding: 10px;
+  background: rgba(206, 201, 201, 0.144);
+  border-radius: 10px;
+}
