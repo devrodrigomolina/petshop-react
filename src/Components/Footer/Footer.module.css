@@ -1,0 +1,32 @@
+.footer {
+  width: 100%;
+  height: 400px;
+  margin-top: 100px;
+  background: #63C1DE;
+  display: flex;
+  justify-content: space-between; 
+  /* clip-path: polygon(50% 19%, 51% 19%, 100% 0, 100% 70%, 100% 100%, 30% 100%, 0 100%, 0 0); */
+}
+
+.img {
+  height: 100%;
+  padding-top: 100px;
+  margin: 0 50px;
+}
+
+.footer_logo {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ul {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
+  font-weight: 600;
+}
