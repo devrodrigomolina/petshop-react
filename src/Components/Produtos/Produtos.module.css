@@ -14,6 +14,7 @@
 
 .cards_produtos {
   width: 100%;
+  height: 300px;
   padding: 10px;
   background: rgba(206, 201, 201, 0.144);
   border-radius: 10px;
