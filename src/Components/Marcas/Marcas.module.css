@@ -1,0 +1,8 @@
+.marcas_container {
+  width: 80vw;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+}
