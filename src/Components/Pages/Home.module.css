@@ -18,6 +18,10 @@
 }
 
 .container_destaques {
+  background: url('../Assets/paw.svg');
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: left;
   width: 90rem;
   display: flex;
   justify-content: space-between;
