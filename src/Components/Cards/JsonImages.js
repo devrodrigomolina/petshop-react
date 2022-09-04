@@ -7,8 +7,8 @@ import img6 from '../Assets/CardsImages/6.png';
 
 export const images = [
   {
-    src: img1,
-    text: 'Carne'
+    src: img6,
+    text: 'Rações'
   },
   {
     src: img2,
@@ -27,7 +27,7 @@ export const images = [
     text: 'Shampoos e cosmeticos'
   },
   {
-    src: img6,
-    text: 'Rações'
+    src: img1,
+    text: 'Carne'
   },
 ]
