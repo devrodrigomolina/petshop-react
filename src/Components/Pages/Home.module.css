@@ -1,0 +1,25 @@
+.home {
+  background: url('../Assets/paw.svg');
+  background-repeat: no-repeat;
+  background-size: 20%;
+}
+
+.p {
+  width: 700px;
+  text-align: center;
+  margin: 20px auto
+}
+
+.container_marcas {
+  background: url('../Assets/paw.svg');
+  background-repeat: no-repeat;
+  background-size: 13%;
+  background-position: right;
+}
+
+.container_destaques {
+  width: 90rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
