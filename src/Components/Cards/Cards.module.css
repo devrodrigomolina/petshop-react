@@ -1,0 +1,32 @@
+.cards {
+  width: 80%;
+  height: 15rem;
+  margin: 0 auto;
+ /*  background: #E2596B; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.card {
+  width: 14%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
+  border-radius: 10px;
+  transition: all .3s;
+}
+.card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  border: 1px dashed #E2596B;
+}
+.imgcard {
+  width: 80px;
+  margin-bottom: 10px;
+}
