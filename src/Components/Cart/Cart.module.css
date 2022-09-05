@@ -1,0 +1,26 @@
+.cart_container {
+  position: relative;
+}
+.cart {
+  font-size: 1.6rem;
+  color: white;
+  cursor: pointer;
+}
+.cart:hover {
+  color: var(--primary-color);
+}
+
+.cart_total {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem !important;
+  right: -16px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 200px;
+  color: red;
+  top: -23px;
+}
