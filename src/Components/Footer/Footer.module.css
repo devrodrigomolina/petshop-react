@@ -22,11 +22,28 @@
 }
 
 .ul {
-  height: 200px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 40px;
+  margin-top: 30px;
   font-weight: 600;
+
+}
+.ul h3 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+.ul a {
+  margin-bottom: 10px;
+}
+.icon {
+  font-size: 2rem;
+  margin-right: 10px
+}
+.ul a:hover {
+  color: var(--primary-color);
+}
+
+.ul p {
+  color: white;
+  width: 200px;
 }
