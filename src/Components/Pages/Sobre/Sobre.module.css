@@ -1,0 +1,28 @@
+.sobre_container {
+  background: url('../../Assets/paw.svg');
+  background-repeat: no-repeat;
+  background-position: 120px;
+  background-size: 20%;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+span {
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.somos {
+  font-size: 1.8rem;
+}
+.missao {
+  width: 400px;
+  margin: 40px auto;
+}
+.missao p {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
