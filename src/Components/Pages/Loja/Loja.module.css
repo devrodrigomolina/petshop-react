@@ -1,0 +1,8 @@
+.produtos_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: url('../../Assets/paw.svg');
+  background-repeat: no-repeat;
+  background-size: 20%;
+}
