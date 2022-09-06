@@ -8,7 +8,7 @@ const Produtos = ({ amount, columns, sizeContainer }) => {
   const [imageId, setImageId] = useState(null);
 
   const openModal = ({ target }) => {
-    setImageId(target.id)
+    setImageId(target.id);
     setModal(true);
   };
 
@@ -19,21 +19,18 @@ const Produtos = ({ amount, columns, sizeContainer }) => {
         gridTemplateColumns: `repeat(${columns}, 1fr)`,
         width: `${sizeContainer}px`,
       }}
-      >
+    >
       {produtos.map(
         ({ src, text, price, id }, index) =>
-        index <= amount && (
-          <div onClick={openModal} className={style.cards_produtos}>
-              {modal && <Modal produtos={produtos} id={id} imageId={imageId}/>}
+          index <= amount && (
+            <div onClick={openModal} className={style.cards_produtos}>
               <img id={id} className={style.img} src={src} />
               <p>{text}</p>
               <p className={style.price}>{price}</p>
-
             </div>
           )
-          )}
-          
-  
+      )}
+      {modal && <Modal produtos={produtos} imageId={imageId} setModal={setModal} modal={modal}/>}
     </div>
   );
 };
