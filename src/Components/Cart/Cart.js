@@ -1,16 +1,18 @@
-import React from 'react'
-import { IoMdCart } from 'react-icons/io'
-import style from './Cart.module.css'
+import React, { useState } from "react";
+import { IoMdCart } from "react-icons/io";
+import style from "./Cart.module.css";
 const Cart = () => {
+  const [itenscart, setItenscart] = useState(3);
+
   const teste = () => {
-    alert('VOCE FOI TESTADO')
-  }
+    alert("VOCE FOI TESTADO");
+  };
   return (
     <div className={style.cart_container}>
-      <span className={style.cart_total}>a</span>
+      {itenscart > 0 && <span className={style.cart_total}>{itenscart}</span>}
       <IoMdCart onClick={teste} className={style.cart} />
     </div>
-  )
-}
+  );
+};
 
-export default Cart
+export default Cart;
