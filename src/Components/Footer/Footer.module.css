@@ -15,6 +15,7 @@
 }
 
 .footer_logo {
+  width: 100%;
   margin: 20px 0;
   display: flex;
   align-items: center;
@@ -26,7 +27,6 @@
   flex-direction: column;
   margin-top: 30px;
   font-weight: 600;
-
 }
 .ul h3 {
   color: var(--primary-color);

@@ -8,6 +8,7 @@ import { FaWhatsapp } from 'react-icons/fa'
 
 const Footer = () => {
   return (
+    <>
     <div className={style.footer}>
       <img className={style.img} src={dog} />
       <div className={style.footer_logo}>
@@ -42,6 +43,8 @@ const Footer = () => {
       </div>
       <img className={style.img} src={dog2} />
     </div>
+      <p style={{textAlign: 'center'}}>Desenvolvido por Rodrigo Molina</p>
+      </>
   );
 };
 
