@@ -5,21 +5,86 @@
   align-items: center;
   justify-content: center;
   position: fixed;
-  background-color: rgba(34, 34, 34, 0.473);
+  background-color: rgba(34, 34, 34, 0.527);
   top: 0;
   left: 0;
-  z-index: 10;
 }
 
 .modal {
   width: 1000px;
   height: 600px;
-  background: rgba(255, 255, 255, 0.349);
-  position: fixed;
+  display: flex;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
 }
 
-.modal  img{
+.modal img{
   width: 400px;
-  position: absolute;
- z-index: 999;
+  height: 100%;
+}
+
+.container_infos {
+  width: 450px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.container_price {
+  display: flex;
+  align-items: center;
+}
+.p {
+  font-size: 2rem;
+}
+.price span {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+}
+.descricao {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0;
+}
+
+.select_qtd {
+  margin-left: 40px;
+  border-radius: 10px;
+  border: 2px solid rgba(139, 137, 137, 0.678);
+  display: flex;
+}
+.select_qtd .qtd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  width: 60px;
+  height: 40px;
+  margin: 0;
+  border: none;
+  outline: none;
+}
+.select_qtd button {
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  background-color: transparent;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.select_qtd button:hover {
+  color: rgb(189, 123, 0);
 }
