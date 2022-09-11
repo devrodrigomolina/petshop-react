@@ -1,0 +1,66 @@
+.container_modalcart {
+  width: 650px;
+  height: 480px;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  right: -120px;
+  border-radius: 10px;
+  clip-path: polygon(0 100%, 100% 100%, 100% 6%, 81% 6%, 78% 1%, 75% 6%, 0 6%)
+}
+.container_produtos {
+  overflow-y: auto;
+  height: 350px;
+}
+.container_modalinfos {
+  margin: 0 auto;
+  width: 95%;
+  height: 200px;
+  padding-top: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.151);
+  display: flex;
+  align-items: center;
+}
+.container_infos {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.produto_desc {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.produto_nome {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.425);
+}
+.produto_preco {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.container_image {
+  width: 220px;
+  height: 150px;
+}
+.container_image img {
+  width: 100%;
+  height: 100%;
+}
+.ButtonsModal {
+  margin-right: 50px;
+}
+
+.total_container {
+  width: 100%;
+  padding: 0 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.151);
+}
+
+.total {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
