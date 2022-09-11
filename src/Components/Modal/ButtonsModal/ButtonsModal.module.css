@@ -1,0 +1,35 @@
+.select_qtd {
+  margin-left: 40px;
+  border-radius: 10px;
+  border: 2px solid rgba(139, 137, 137, 0.678);
+  display: flex;
+}
+
+
+.select_qtd .qtd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  width: 60px;
+  height: 40px;
+  margin: 0;
+  border: none;
+  outline: none;
+}
+.select_qtd button {
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  background-color: transparent;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.select_qtd button:hover {
+  color: rgb(189, 123, 0);
+}
