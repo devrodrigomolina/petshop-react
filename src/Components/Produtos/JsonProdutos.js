@@ -15,6 +15,7 @@ export const produtos = [
   {
     id: 0,
     src: produto1,
+    name: 'Golden',
     text: "Ração Golden para Gatos Adultos Sabor Frango",
     desc: [
       "Indicada para gatos",
@@ -28,6 +29,7 @@ export const produtos = [
   {
     id: 1,
     src: produto2,
+    name: 'Bravecto',
     text: "Antipulgas e Carrapatos Bravecto MSD para Cães",
     desc: [
       "Indicado para cães",
@@ -40,6 +42,7 @@ export const produtos = [
   {
     id: 2,
     src: produto3,
+    name: 'Mix',
     text: "Ração Mix de Carnes para Gatos Adultos",
     desc: [
       "Indicada para gatos adultos",
@@ -53,54 +56,108 @@ export const produtos = [
     id: 3,
     src: produto4,
     text: "Ração Golden Special Sabor Frango e Carne para Cães Adultos",
+    desc: [
+      "Indicada para gatos adultos",
+      "100% completa e balanceada",
+      "Fórmula livre de corantes artificiais",
+      "Minerais controlados para ajudar a manter o trato urinário saudável.",
+    ],
     price: "R$ 136,00",
   },
   {
     id: 4,
     src: produto5,
     text: "Ração Royal Canin Boxer Puppy",
+        desc: [
+      "Indicada para gatos adultos",
+      "100% completa e balanceada",
+      "Fórmula livre de corantes artificiais",
+      "Minerais controlados para ajudar a manter o trato urinário saudável.",
+    ],
     price: "R$ 236,00",
   },
   {
     id: 5,
     src: produto6,
     text: "Ração para Cães Filhotes Sabor Frango",
+        desc: [
+      "Indicada para gatos adultos",
+      "100% completa e balanceada",
+      "Fórmula livre de corantes artificiais",
+      "Minerais controlados para ajudar a manter o trato urinário saudável.",
+    ],
     price: "R$ 23,00",
   },
   {
     id: 6,
     src: produto7,
     text: "ADADAD",
+        desc: [
+      "Indicada para gatos adultos",
+      "100% completa e balanceada",
+      "Fórmula livre de corantes artificiais",
+      "Minerais controlados para ajudar a manter o trato urinário saudável.",
+    ],
     price: "R$ 23,00",
   },
   {
     id: 7,
     src: produto8,
     text: "12121212or Frango",
+        desc: [
+      "Indicada para gatos adultos",
+      "100% completa e balanceada",
+      "Fórmula livre de corantes artificiais",
+      "Minerais controlados para ajudar a manter o trato urinário saudável.",
+    ],
     price: "R$ 23,00",
   },
   {
     id: 8,
     src: produto9,
     text: "Raadasdasdtes S",
+        desc: [
+      "Indicada para gatos adultos",
+      "100% completa e balanceada",
+      "Fórmula livre de corantes artificiais",
+      "Minerais controlados para ajudar a manter o trato urinário saudável.",
+    ],
     price: "R$ 23,00",
   },
   {
     id: 9,
     src: produto10,
     text: "smksmgn ngo",
+        desc: [
+      "Indicada para gatos adultos",
+      "100% completa e balanceada",
+      "Fórmula livre de corantes artificiais",
+      "Minerais controlados para ajudar a manter o trato urinário saudável.",
+    ],
     price: "R$ 23,00",
   },
   {
     id: 10,
     src: produto11,
     text: "oçioiouio",
+        desc: [
+      "Indicada para gatos adultos",
+      "100% completa e balanceada",
+      "Fórmula livre de corantes artificiais",
+      "Minerais controlados para ajudar a manter o trato urinário saudável.",
+    ],
     price: "R$ 23,00",
   },
   {
     id: 11,
     src: produto12,
     text: "mbmbmbnmbnmbngo",
+        desc: [
+      "Indicada para gatos adultos",
+      "100% completa e balanceada",
+      "Fórmula livre de corantes artificiais",
+      "Minerais controlados para ajudar a manter o trato urinário saudável.",
+    ],
     price: "R$ 23,00",
   },
 ];
