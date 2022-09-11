@@ -5,7 +5,7 @@ import { marcas } from './JsonMarcas'
 const Marcas = () => {
   return (
   <div className={style.marcas_container}>
-    {marcas.map(({src, text}) => <img src={src} />)}
+    {marcas.map(({src, text}) => <img key={src} src={src} />)}
   </div>
   )
 }
