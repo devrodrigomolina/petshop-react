@@ -6,7 +6,7 @@ const Cards = () => {
   return (
     <div className={style.cards}>
       {images.map(({src, text}) => (
-        <div className={style.card}>
+        <div key={src} className={style.card}>
           <img className={style.imgcard} src={src} />
           <p>{text}</p>
         </div>
