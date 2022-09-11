@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { produtos } from "./JsonProdutos";
 import style from "./Produtos.module.css";
 import Modal from "../Modal/Modal";
@@ -6,6 +6,11 @@ import Modal from "../Modal/Modal";
 const Produtos = ({ amount, columns, sizeContainer }) => {
   const [modal, setModal] = useState(false);
   const [imageId, setImageId] = useState(null);
+  const [produtosSelecionados, setProdutosSelecionados] = useState([]);
+
+  useEffect(() => {
+    localStorage.setItem("pet", JSON.stringify(produtosSelecionados));
+  }, [produtosSelecionados]);
 
   const openModal = ({ target }) => {
     setImageId(target.id);
@@ -23,14 +28,23 @@ const Produtos = ({ amount, columns, sizeContainer }) => {
       {produtos.map(
         ({ src, text, price, id }, index) =>
           index <= amount && (
-            <div onClick={openModal} className={style.cards_produtos}>
+            <div key={id} onClick={openModal} className={style.cards_produtos}>
               <img id={id} className={style.img} src={src} />
               <p>{text}</p>
               <p className={style.price}>{price}</p>
             </div>
           )
       )}
-      {modal && <Modal produtos={produtos} imageId={imageId} setModal={setModal} modal={modal}/>}
+      {modal && (
+        <Modal
+          produtos={produtos}
+          setProdutosSelecionados={setProdutosSelecionados}
+          produtosSelecionados={produtosSelecionados}
+          imageId={imageId}
+          setModal={setModal}
+          modal={modal}
+        />
+      )}
     </div>
   );
 };
