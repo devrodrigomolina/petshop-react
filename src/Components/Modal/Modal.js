@@ -7,7 +7,8 @@ import ButtonsModal from "./ButtonsModal/ButtonsModal";
 
 const Modal = ({ produtos, imageId, setModal, setProdutosSelecionados, produtosSelecionados }) => {
   const produto = produtos.find(produto => produto.id === +imageId)
-  const { id, src, price, text, desc } = produto
+  
+  const { id, src, price, text, desc, quantidade } = produto
 
   const closeModal = ({ target }) => {
     target.id === "container" && setModal(false);
@@ -37,7 +38,7 @@ const Modal = ({ produtos, imageId, setModal, setProdutosSelecionados, produtosS
               <span>Preço:</span>
               <p className={style.p}>{price}</p>
             </div>
-            <ButtonsModal />
+            <ButtonsModal quantidadeP={quantidade} produto={produto} />
           </div>
 
           <div className={style.btns}>

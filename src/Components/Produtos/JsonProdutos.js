@@ -15,8 +15,9 @@ export const produtos = [
   {
     id: 0,
     src: produto1,
-    name: 'Golden',
+    name: "Golden",
     text: "Ração Golden para Gatos Adultos Sabor Frango",
+    quantidade: 1,
     desc: [
       "Indicada para gatos",
       "Contém fórmula específica para felinos castrados",
@@ -29,8 +30,9 @@ export const produtos = [
   {
     id: 1,
     src: produto2,
-    name: 'Bravecto',
+    name: "Bravecto",
     text: "Antipulgas e Carrapatos Bravecto MSD para Cães",
+    quantidade: 1,
     desc: [
       "Indicado para cães",
       "Acaba com a infestação de carrapatos e pulgas",
@@ -42,8 +44,9 @@ export const produtos = [
   {
     id: 2,
     src: produto3,
-    name: 'Mix',
+    name: "Mix",
     text: "Ração Mix de Carnes para Gatos Adultos",
+    quantidade: 1,
     desc: [
       "Indicada para gatos adultos",
       "100% completa e balanceada",
@@ -56,6 +59,7 @@ export const produtos = [
     id: 3,
     src: produto4,
     text: "Ração Golden Special Sabor Frango e Carne para Cães Adultos",
+    quantidade: 1,
     desc: [
       "Indicada para gatos adultos",
       "100% completa e balanceada",
@@ -68,7 +72,8 @@ export const produtos = [
     id: 4,
     src: produto5,
     text: "Ração Royal Canin Boxer Puppy",
-        desc: [
+    quantidade: 1,
+    desc: [
       "Indicada para gatos adultos",
       "100% completa e balanceada",
       "Fórmula livre de corantes artificiais",
@@ -80,7 +85,8 @@ export const produtos = [
     id: 5,
     src: produto6,
     text: "Ração para Cães Filhotes Sabor Frango",
-        desc: [
+    quantidade: 1,
+    desc: [
       "Indicada para gatos adultos",
       "100% completa e balanceada",
       "Fórmula livre de corantes artificiais",
@@ -92,7 +98,8 @@ export const produtos = [
     id: 6,
     src: produto7,
     text: "ADADAD",
-        desc: [
+    quantidade: 1,
+    desc: [
       "Indicada para gatos adultos",
       "100% completa e balanceada",
       "Fórmula livre de corantes artificiais",
@@ -104,7 +111,8 @@ export const produtos = [
     id: 7,
     src: produto8,
     text: "12121212or Frango",
-        desc: [
+    quantidade: 1,
+    desc: [
       "Indicada para gatos adultos",
       "100% completa e balanceada",
       "Fórmula livre de corantes artificiais",
@@ -116,7 +124,8 @@ export const produtos = [
     id: 8,
     src: produto9,
     text: "Raadasdasdtes S",
-        desc: [
+    quantidade: 1,
+    desc: [
       "Indicada para gatos adultos",
       "100% completa e balanceada",
       "Fórmula livre de corantes artificiais",
@@ -128,7 +137,8 @@ export const produtos = [
     id: 9,
     src: produto10,
     text: "smksmgn ngo",
-        desc: [
+    quantidade: 1,
+    desc: [
       "Indicada para gatos adultos",
       "100% completa e balanceada",
       "Fórmula livre de corantes artificiais",
@@ -140,7 +150,8 @@ export const produtos = [
     id: 10,
     src: produto11,
     text: "oçioiouio",
-        desc: [
+    quantidade: 1,
+    desc: [
       "Indicada para gatos adultos",
       "100% completa e balanceada",
       "Fórmula livre de corantes artificiais",
@@ -152,7 +163,8 @@ export const produtos = [
     id: 11,
     src: produto12,
     text: "mbmbmbnmbnmbngo",
-        desc: [
+    quantidade: 1,
+    desc: [
       "Indicada para gatos adultos",
       "100% completa e balanceada",
       "Fórmula livre de corantes artificiais",
