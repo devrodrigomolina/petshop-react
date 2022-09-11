@@ -1,51 +1,53 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import style from "./Modal.module.css";
 import Title from "../Title";
-import Button from '../Button/Button'
+import Button from "../Button/Button";
+import ButtonsModal from "./ButtonsModal/ButtonsModal";
 
-const Modal = ({ produtos, imageId, setModal, modal }) => {
 
-  const [quantidade, setQuantidade] = useState(1)
-
-  const addItemCart = () => setQuantidade(quantidade + 1);
-  const removeItemCart = () => quantidade != 0 && setQuantidade(quantidade - 1);
+const Modal = ({ produtos, imageId, setModal, setProdutosSelecionados, produtosSelecionados }) => {
+  const produto = produtos.find(produto => produto.id === +imageId)
+  const { id, src, price, text, desc } = produto
 
   const closeModal = ({ target }) => {
     target.id === "container" && setModal(false);
+    target.innerText === "CANCELAR" && setModal(false);
+  };
+
+  const setItensCart = () => {
+    setProdutosSelecionados([...produtosSelecionados, produto])
   };
 
   return (
     <div onClick={closeModal} id="container" className={style.modal_container}>
       <div className={style.modal}>
         <div>
-          <img src={produtos[+imageId].src} />
+          <img src={src} />
         </div>
         <div className={style.container_infos}>
-
-          <Title text={produtos[+imageId].text} />
+          <Title text={text} />
           <div className={style.descricao}>
-            {produtos[+imageId].desc.map((desc) => (
-              <p>- {desc}</p>
+            {desc.map((desc) => (
+              <p key={desc}>- {desc}</p>
             ))}
           </div>
 
           <div className={style.container_price}>
-
             <div className={style.price}>
               <span>Preço:</span>
-              <p className={style.p}>{produtos[+imageId].price}</p>
+              <p className={style.p}>{price}</p>
             </div>
-            <div className={style.select_qtd}>
-                <button onClick={addItemCart}>+</button>
-                <p className={style.qtd}>{quantidade}</p>
-                <button onClick={removeItemCart}>-</button>
-            </div>
+            <ButtonsModal />
           </div>
 
-
           <div className={style.btns}>
-            <Button text='Adicionar ao carrinho' />
-            <Button onClick={closeModal} text='Cancelar' background={'red'} color={'white'} />
+            <Button text="Adicionar ao carrinho" onClick={setItensCart} />
+            <Button
+              text="Cancelar"
+              background={"red"}
+              color={"white"}
+              onClick={closeModal}
+            />
           </div>
         </div>
       </div>
