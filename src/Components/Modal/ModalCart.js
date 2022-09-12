@@ -7,7 +7,8 @@ const ModalCart = ({ modalCart }) => {
   const produtosCart = JSON.parse(localStorage.getItem("pet"));
   const [qtd, setQtd] = useState('')
 
-  const totalPreco = produtosCart.map(({ price }) =>
+
+  const totalPreco = produtosCart && produtosCart.map(({ price }) =>
     Number(price.replace("R$ ", "").replace(",", "."))
   );
 
