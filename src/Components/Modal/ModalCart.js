@@ -8,7 +8,7 @@ const ModalCart = ({ modalCart }) => {
   const [qtd, setQtd] = useState('')
 
 
-  const totalPreco = produtosCart && produtosCart.map(({ price }) =>
+  const totalPreco = produtosCart != null && produtosCart.map(({ price }) =>
     Number(price.replace("R$ ", "").replace(",", "."))
   );
 
