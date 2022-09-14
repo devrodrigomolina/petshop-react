@@ -5,21 +5,11 @@ import Button from "../Button/Button";
 
 const ModalCart = ({ modalCart }) => {
   const produtosCart = JSON.parse(localStorage.getItem("pet"));
-  const [qtd, setQtd] = useState('')
 
+  const totalPreco = produtosCart != null && produtosCart.map(({ price }) => Number(price.replace("R$ ", "").replace(",", ".")));
 
-  const totalPreco = produtosCart != null && produtosCart.map(({ price }) =>
-    Number(price.replace("R$ ", "").replace(",", "."))
-  );
+  const totalPrecoFinal = totalPreco.length && totalPreco.reduce((acc, att) => acc += att)
 
-  useEffect(() => {
-    produtosCart.forEach(element => {
-      setQtd(element.quantidade)
-    });
-
-  }, [produtosCart])
-
-  const totalPrecoFinal = totalPreco.length && totalPreco.reduce((acc, att) => acc + att);
 
   return (
     <>
@@ -37,10 +27,7 @@ const ModalCart = ({ modalCart }) => {
                   <p className={style.produto_preco}>{produtos.price}</p>
                 </div>
                 <div className={style.ButtonsModal}>
-                  <ButtonsModal
-                    quantidadeP={produtos.quantidade}
-                    produto={produtos}
-                  />
+                  <ButtonsModal />
                 </div>
               </div>
             ))}
@@ -49,7 +36,7 @@ const ModalCart = ({ modalCart }) => {
           <div className={style.total_container}>
             <div className={style.total}>
               <p className={style.produto_preco}>Total:</p>
-              <p>R$: {totalPrecoFinal * qtd }</p>
+              <p>R$: {totalPrecoFinal}</p>
             </div>
             <Button
               text="FINALIZAR COMPRA"

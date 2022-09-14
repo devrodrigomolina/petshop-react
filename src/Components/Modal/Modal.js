@@ -3,12 +3,15 @@ import style from "./Modal.module.css";
 import Title from "../Title";
 import Button from "../Button/Button";
 import ButtonsModal from "./ButtonsModal/ButtonsModal";
+import { QtdContext } from "../../context/qtdContext";
 
 
-const Modal = ({ produtos, imageId, setModal, setProdutosSelecionados, produtosSelecionados }) => {
+const Modal = ({ produtos, imageId, setModal }) => {
   const produto = produtos.find(produto => produto.id === +imageId)
-  
-  const { id, src, price, text, desc, quantidade } = produto
+
+  const { id, src, price, text, desc } = produto
+
+  const {produtosSelecionados, setProdutosSelecionados} = useContext(QtdContext)
 
   const closeModal = ({ target }) => {
     target.id === "container" && setModal(false);
@@ -38,7 +41,7 @@ const Modal = ({ produtos, imageId, setModal, setProdutosSelecionados, produtosS
               <span>Preço:</span>
               <p className={style.p}>{price}</p>
             </div>
-            <ButtonsModal quantidadeP={quantidade} produto={produto} />
+            <ButtonsModal id={id}/>
           </div>
 
           <div className={style.btns}>

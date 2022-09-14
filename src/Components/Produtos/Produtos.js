@@ -6,11 +6,6 @@ import Modal from "../Modal/Modal";
 const Produtos = ({ amount, columns, sizeContainer }) => {
   const [modal, setModal] = useState(false);
   const [imageId, setImageId] = useState(null);
-  const [produtosSelecionados, setProdutosSelecionados] = useState([]);
-
-  useEffect(() => {
-    localStorage.setItem("pet", JSON.stringify(produtosSelecionados));
-  }, [produtosSelecionados]);
 
   const openModal = ({ target }) => {
     setImageId(target.id);
@@ -38,8 +33,6 @@ const Produtos = ({ amount, columns, sizeContainer }) => {
       {modal && (
         <Modal
           produtos={produtos}
-          setProdutosSelecionados={setProdutosSelecionados}
-          produtosSelecionados={produtosSelecionados}
           imageId={imageId}
           setModal={setModal}
           modal={modal}
