@@ -24,6 +24,12 @@
   background-position: left;
   width: 90rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0 auto;
+}
+
+@media (max-width: 1367px) {
+  .container_destaques {
+    width: 80rem;
+  }
 }

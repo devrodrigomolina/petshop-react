@@ -27,7 +27,7 @@ const ModalCart = ({ modalCart }) => {
                   <p className={style.produto_preco}>{produtos.price}</p>
                 </div>
                 <div className={style.ButtonsModal}>
-                  <ButtonsModal />
+                  <ButtonsModal cartProdutoId={produtos.id}/>
                 </div>
               </div>
             ))}

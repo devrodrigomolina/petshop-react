@@ -7,7 +7,9 @@
   font-size: 1.1rem;
   text-transform: uppercase;
 }
-
+.menu-mobile {
+  
+}
 a {
   color: white;
   transition: all .3s;
@@ -16,3 +18,9 @@ a:hover {
   color: #f3d097;
 }
 
+
+@media (max-width: 991.98px) {
+  .ul {
+    display: none;
+  }
+}

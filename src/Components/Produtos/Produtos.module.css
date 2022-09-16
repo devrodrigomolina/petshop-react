@@ -32,3 +32,10 @@
   color: var(--primary-color);
   font-weight: bold;
 }
+
+
+@media (max-width: 1281px) {
+  .cards_produtos {
+    width: 80%;
+  }
+}

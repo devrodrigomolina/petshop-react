@@ -30,3 +30,9 @@
   width: 80px;
   margin-bottom: 10px;
 }
+
+@media (max-width: 1367px) {
+  .cards {
+    width: 85%;
+  }
+}

@@ -21,7 +21,11 @@
   align-items: center;
   flex-direction: column;
 }
-
+.container_ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between
+}
 .ul {
   display: flex;
   flex-direction: column;
@@ -46,4 +50,14 @@
 .ul p {
   color: white;
   width: 200px;
+}
+
+@media (max-width: 1367px) {
+  .footer {
+    height: 350px;
+  }
+  .img {
+    margin: 0 10px;
+  }
+
 }
