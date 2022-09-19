@@ -3,20 +3,19 @@ import { NavLink } from "react-router-dom";
 import Cart from "../Cart/Cart";
 
 import style from "./LinksMenu.module.css";
-import MenuMobile from "./MenuMobile/MenuMobile";
+
 
 const HeaderLinks = () => {
   return (
-    <>
-      <MenuMobile />
+    <> 
       <ul className={style.ul}>
-        <NavLink exact="true" to="/">
+        <NavLink className='link-item' exact="true" to="/">
           Home
         </NavLink>
-        <NavLink to="sobre">Sobre</NavLink>
-        <NavLink to="loja">Loja</NavLink>
-        <NavLink to="contato">Contato</NavLink>
-        <div>
+        <NavLink className='link-item' to="sobre">Sobre</NavLink>
+        <NavLink className='link-item' to="loja">Loja</NavLink>
+        <NavLink className='link-item' to="contato">Contato</NavLink>
+        <div className="cart">
           <Cart />
         </div>
       </ul>
