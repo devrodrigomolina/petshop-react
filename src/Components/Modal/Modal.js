@@ -5,22 +5,27 @@ import Button from "../Button/Button";
 import ButtonsModal from "./ButtonsModal/ButtonsModal";
 import { QtdContext } from "../../context/qtdContext";
 
-
 const Modal = ({ produtos, imageId, setModal }) => {
-  const produto = produtos.find(produto => produto.id === +imageId)
+  
+  const { produtosSelecionados, setProdutosSelecionados } = useContext(QtdContext);
+  const produtoFoiSelecionado = produtosSelecionados.find((produto) => produto.id === +imageId)
+  const produtoDados = produtos.find((produto) => produto.id === +imageId);
 
-  const { id, src, price, text, desc } = produto
+  const produto = produtoFoiSelecionado ? produtoFoiSelecionado : produtoDados
 
-  const {produtosSelecionados, setProdutosSelecionados} = useContext(QtdContext)
-
+  const { id, src, price, text, desc } = produto;
+  
   const closeModal = ({ target }) => {
     target.id === "container" && setModal(false);
     target.innerText === "CANCELAR" && setModal(false);
   };
-
-  const setItensCart = () => {
-    setProdutosSelecionados([...produtosSelecionados, produto])
-  };
+  
+  const changeItensCart = (id) => {
+    const produtosNaoSelecionados = produtosSelecionados.filter((item) => item.id !== +imageId);
+    const novosProdutos = [...produtosNaoSelecionados, produto].sort((a, b) => a.id - b.id);
+    setProdutosSelecionados(novosProdutos);
+    setModal(false);
+  }
 
   return (
     <div onClick={closeModal} id="container" className={style.modal_container}>
@@ -41,11 +46,11 @@ const Modal = ({ produtos, imageId, setModal }) => {
               <span>Preço:</span>
               <p className={style.p}>{price}</p>
             </div>
-            <ButtonsModal id={id}/>
+            <ButtonsModal id={id} />
           </div>
 
           <div className={style.btns}>
-            <Button text="Adicionar ao carrinho" onClick={setItensCart} />
+            <Button text="Adicionar ao carrinho" onClick={changeItensCart} />
             <Button
               text="Cancelar"
               background={"red"}
