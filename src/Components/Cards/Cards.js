@@ -8,7 +8,7 @@ const Cards = () => {
       {images.map(({src, text}) => (
         <div key={src} className={style.card}>
           <img className={style.imgcard} src={src} />
-          <p>{text}</p>
+          <p className={style.text_card}>{text}</p>
         </div>
       ))}
     </div>
