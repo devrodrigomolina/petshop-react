@@ -31,3 +31,12 @@ img {
 .active {
   color: var(--primary-color);
 }
+.mobile_app {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .mobile_app {
+    display: block;
+  }
+}

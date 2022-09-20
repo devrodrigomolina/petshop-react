@@ -18,7 +18,7 @@ const ProdutoDestaque = () => {
         para gatos curiosos proporcionando a eles todos os nutrientes e energia
         necessários para explorar o mundo.
       </p>
-      <NavLink to='/' className={style.link}>Veja mais produtos em destaque &gt;</NavLink>
+      <NavLink to='/loja' className={style.link}>Veja mais produtos em destaque &gt;</NavLink>
     </div>
   );
 };

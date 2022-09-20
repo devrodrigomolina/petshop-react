@@ -33,3 +33,14 @@
     width: 80rem;
   }
 }
+
+@media (max-width: 991.98px) {
+  .p {
+    width: 90vw;
+  }
+  .container_destaques {
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+  }
+}

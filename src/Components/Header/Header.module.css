@@ -3,7 +3,7 @@
   background: url('../Assets/background.jpg') no-repeat;
   background-size: cover;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 50% 94%, 0 88%);
-clip-path: polygon(0 0, 100% 0, 100% 87%, 50% 100%, 0 87%);
+  clip-path: polygon(0 0, 100% 0, 100% 87%, 50% 100%, 0 87%);
 }
 
 .nav_container{
@@ -54,3 +54,24 @@ clip-path: polygon(0 0, 100% 0, 100% 87%, 50% 100%, 0 87%);
   }
 }
 
+@media (max-width: 991.98px) {
+  .container {
+    height: 580px;
+    background-position: center;
+  }
+  .nav_container{
+    max-width: 80rem;
+    margin: auto 20px;
+    padding-top: 1rem;
+  }
+  
+  .infos {
+    max-width: 80%;
+    margin: 180px auto;
+    text-align: center;
+  }
+  .infos h2 {
+    margin: 1rem 0;
+    color: rgba(247, 240, 240, 0.836);
+  }
+}

@@ -6,3 +6,13 @@
   justify-content: space-around;
   margin: 0 auto;
 }
+
+@media (max-width: 991.98px) { 
+  .marcas_container {
+    width: 85vw;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 100px auto;
+  }
+}

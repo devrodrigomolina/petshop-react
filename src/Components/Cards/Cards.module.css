@@ -36,3 +36,24 @@
     width: 85%;
   }
 }
+
+@media (max-width: 991.98px) {
+  .cards {
+    width: 90%;
+    height: 300px;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 115px;
+    height: 115px;
+    margin: 0 8px;
+  }
+  .imgcard {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  .text_card {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}

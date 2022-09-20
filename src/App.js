@@ -12,10 +12,12 @@ function App() {
   return (
     <QtdProvider>   
     <BrowserRouter>
-        <Header />
-      
-        <MenuMobile />
-  
+        <div className="header_app">
+          <Header />
+        </div>
+        <div className="mobile_app">
+          <MenuMobile />
+        </div>
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/sobre" element={<Sobre />}></Route>
