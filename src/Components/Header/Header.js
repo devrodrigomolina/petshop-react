@@ -11,7 +11,7 @@ const Header = () => {
     <div className={style.container}>
       <nav className={style.nav_container}>
         <Link to='/'>
-          <Logo width={'100px'} />
+          <Logo width={'80px'} />
         </Link>
         <LinksMenu />
       </nav>
