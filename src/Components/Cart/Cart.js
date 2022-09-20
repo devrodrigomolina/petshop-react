@@ -1,11 +1,17 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { IoMdCart } from "react-icons/io";
+import { QtdContext } from "../../context/qtdContext";
 import ModalCart from "../Modal/ModalCart";
 import style from "./Cart.module.css";
 
 const Cart = () => {
   const [itenscart, setItenscart] = useState(0);
   const [modalCart, setModalCart] = useState(false);
+  const { produtosSelecionados } = useContext(QtdContext);
+
+  useEffect(() => {
+    setItenscart(produtosSelecionados.length)
+  }, [produtosSelecionados])
 
   const openModalCart = () => {
     setModalCart(!modalCart);
