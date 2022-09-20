@@ -10,7 +10,7 @@ const ModalCart = ({ modalCart }) => {
 
  /*  const quantidade = produtosCart.filter(({quantidade}) => quantidade) */
 
-  console.log(produtosCart);
+ 
 
   useEffect(() => {
     if(produtosCart.length) {
