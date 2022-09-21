@@ -3,23 +3,17 @@ import { produtos } from "./JsonProdutos";
 import style from "./Produtos.module.css";
 import Modal from "../Modal/Modal";
 
-const Produtos = ({ amount, columns, sizeContainer }) => {
+const Produtos = ({ amount }) => {
   const [modal, setModal] = useState(false);
   const [imageId, setImageId] = useState(null);
-
+ 
   const openModal = ({ target }) => {
     setImageId(target.id);
     setModal(true);
   };
 
   return (
-    <div
-      className={style.container_produtos}
-      style={{
-        gridTemplateColumns: `repeat(${columns}, 1fr)`,
-        width: `${sizeContainer}px`,
-      }}
-    >
+    <>
       {produtos.map(
         ({ src, text, price, id }, index) =>
           index <= amount && (
@@ -38,7 +32,7 @@ const Produtos = ({ amount, columns, sizeContainer }) => {
           modal={modal}
         />
       )}
-    </div>
+    </>
   );
 };
 

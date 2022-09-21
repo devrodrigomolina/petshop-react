@@ -6,7 +6,7 @@
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.993);
-  clip-path: circle(0px at calc(100% - 45px) 45px);
+  clip-path: circle(0px at calc(100% - 400px) 45px);
   transition: all 0.3s ease-in-out;
 }
 
@@ -17,7 +17,7 @@
 .menu_btn{
   position: fixed;
   z-index: 2;
-  right: 20px;
+  left: 20px;
   top: 20px;
   height: 50px;
   width: 50px;

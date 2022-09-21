@@ -74,4 +74,7 @@
     margin: 1rem 0;
     color: rgba(247, 240, 240, 0.836);
   }
+  .logo {width: 70px;
+    margin-left: 180px;
+  }
 }

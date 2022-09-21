@@ -8,16 +8,11 @@ const ModalCart = ({ modalCart }) => {
   const [precoTotal, setPrecoTotal] = useState(0);
   const precoFinal = produtosCart.map(({price, quantidade}) => Number(price.replace("R$ ", "").replace(",", ".")) * quantidade)
 
- /*  const quantidade = produtosCart.filter(({quantidade}) => quantidade) */
-
- 
-
   useEffect(() => {
     if(produtosCart.length) {
       setPrecoTotal(precoFinal)
     }
   }, [produtosCart.length]);
-
 
   return (
     <>

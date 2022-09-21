@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import style from "./MenuMobile.module.css";
 import LinksMenu from "../LinksMenu";
 import Logo from "../../Logo/Logo";
+import Cart from "../../Cart/Cart";
 
 const MenuMobile = () => {
   const [checkbox, setCheckbox] = useState(false);

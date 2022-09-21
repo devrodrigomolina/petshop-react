@@ -28,6 +28,17 @@
   margin: 0 auto;
 }
 
+.container_produtos {
+  width: 1100px;
+  display: grid;
+  justify-content: center;
+  margin-left: 100px;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+
 @media (max-width: 1367px) {
   .container_destaques {
     width: 80rem;
@@ -42,5 +53,11 @@
     width: 85vw;
     display: flex;
     flex-direction: column;
+  }
+  .container_produtos {
+    width: 100%;
+    margin: 60px auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 }

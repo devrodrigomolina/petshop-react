@@ -32,7 +32,7 @@ const Footer = () => {
             </ul>
             <ul className={style.ul}>
               <h3>RELACIONAMENTO</h3>
-              <p>
+              <p className={style.ajuda}>
                 Precisa de ajuda com um pedido ou informações sobre produtos?
               </p>
               <Link
@@ -40,6 +40,7 @@ const Footer = () => {
                 style={{
                   display: "flex",
                   alignItems: "center",
+                  textAlign: 'center',
                   marginTop: "20px",
                 }}
               >

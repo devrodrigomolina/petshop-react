@@ -61,3 +61,25 @@
   }
 
 }
+@media (max-width: 991.98px) {
+  .footer {
+    height: auto;
+  }
+  .img {
+    display: none;
+  }
+  .container_ul {
+    flex-direction: column;
+  }
+  
+  .ul {
+    align-items: center;
+    text-align: center;
+  }
+
+  .icon {
+    font-size: 2rem;
+    margin-right: 0px
+  }
+  
+}

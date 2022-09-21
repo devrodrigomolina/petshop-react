@@ -36,8 +36,8 @@ const Home = () => {
           <ProdutoDestaque />
         </div>
 
-        <div>
-          <Produtos amount={5} columns={3} sizeContainer={800} />
+        <div className={style.container_produtos}>
+          <Produtos amount={5}/>
         </div>
       </div>
       <div style={{ margin: "20px auto", width: "75vw" }}>
