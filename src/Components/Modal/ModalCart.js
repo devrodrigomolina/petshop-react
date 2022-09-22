@@ -10,7 +10,7 @@ const ModalCart = ({ modalCart }) => {
 
   useEffect(() => {
     if(produtosCart.length) {
-      setPrecoTotal(precoFinal)
+      setPrecoTotal(precoFinal.reduce((a, b) => a + b))
     }
   }, [produtosCart.length]);
 
