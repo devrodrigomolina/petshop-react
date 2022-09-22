@@ -7,6 +7,10 @@ import Cart from "../../Cart/Cart";
 const MenuMobile = () => {
   const [checkbox, setCheckbox] = useState(false);
 
+  const closeModal = ({target}) => {
+    target.tagName === 'A' && setCheckbox(false)
+  }
+
   return (
     <div className={style.main_container}>
       <input
@@ -15,18 +19,21 @@ const MenuMobile = () => {
         onChange={({ target }) => setCheckbox(target.checked)}
         id={style.active}
       />
-      <label for={style.active} className={style.menu_btn}>
-        <div className={style.menu}>
-          <div id={style.bar} className={checkbox && style.animate}></div>
-        </div>
-      </label>
-      <div className={style.wrapper}>
-        <Logo width={'100px'} />
-        <LinksMenu />
+
+      <div className={style.container_menu}>
+        <label for={style.active} className={style.menu_btn}>
+          <div className={style.menu}>
+            <div id={style.bar} className={checkbox && style.animate}></div>
+          </div>
+        </label>
+        <Cart />
+      </div>
+
+      <div onClick={closeModal} className={style.wrapper}>
+        <LinksMenu  />
       </div>
     </div>
   );
 };
-
 
 export default MenuMobile;
