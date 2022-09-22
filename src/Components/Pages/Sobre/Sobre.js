@@ -6,7 +6,7 @@ const Sobre = () => {
   return (
     <div className={style.sobre_container}>
       <Title text="Quem Somos?" />
-      <p style={{ width: "800px", margin: "0 auto", textAlign: "center" }}>
+      <p className={style.quem_somos}>
         Sabemos que cada laço é único. Fonte de alegria, evolução, bem-estar.
         Temos experiência e oferecemos espaços, produtos e serviços – e tudo
         mais que for preciso – para que a relação entre pets e suas famílias

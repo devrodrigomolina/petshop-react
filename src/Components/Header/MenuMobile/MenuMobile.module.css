@@ -7,7 +7,7 @@
   width: 100%;
   background: rgba(0, 0, 0, 0.993);
   clip-path: circle(0px at calc(100% - 400px) 45px);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; 
 }
 
 
@@ -15,10 +15,8 @@
   clip-path: circle(75%);
 }
 .menu_btn{
-  position: fixed;
+  display: none;
   z-index: 2;
-  left: 20px;
-  top: 20px;
   height: 50px;
   width: 50px;
   text-align: center;
@@ -50,7 +48,7 @@
   font-weight: 500;
   position: relative;
   line-height: 50px;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; 
 }
 .wrapper ul a:hover{
   color: var(--primary-color);
@@ -68,18 +66,23 @@ input[type="checkbox"]{
     filter: hue-rotate(360deg);
   }
 }
-
+.container_menu {  
+ /*  position: fixed; */
+  z-index: 999;
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 0 30px;
+}
 
 .menu {
-  width: 100%;
   height: 100%;
-  display: none;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  cursor: pointer;
+  cursor: pointer; 
 }
 
 #bar,
@@ -87,6 +90,7 @@ input[type="checkbox"]{
 #bar:before {
   width: 30px;
   height: 3px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.664);
 }
 
 #bar {
@@ -126,7 +130,7 @@ input[type="checkbox"]{
 
 
 @media (max-width: 991.98px) {
-  .wrapper {
+  .wrapper, .menu_btn {
     display: block;
   }
   .menu {

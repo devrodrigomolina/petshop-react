@@ -8,15 +8,17 @@ import Loja from "./Components/Pages/Loja/Loja";
 import QtdProvider from "./context/qtdContext";
 import MenuMobile from './Components/Header/MenuMobile/MenuMobile'
 
+
 function App() {
+
   return (
     <QtdProvider>   
     <BrowserRouter>
-        <div className="header_app">
-          <Header />
-        </div>
         <div className="mobile_app">
           <MenuMobile />
+        </div>
+        <div className="header_app">
+          <Header />
         </div>
         <Routes>
           <Route path="/" element={<Home />}></Route>

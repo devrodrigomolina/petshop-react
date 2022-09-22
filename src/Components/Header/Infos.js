@@ -12,7 +12,7 @@ const Infos = () => {
         Seja para comprar um petisco ou uma roupinha estilosa... basta você
         selecionar o produto, escolher como deseja pagar e pronto!
       </h2>
-      <Button text='Saiba Mais'/>
+      <Button text='Saiba Mais' />
     </div>
   );
 };

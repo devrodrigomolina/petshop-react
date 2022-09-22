@@ -64,3 +64,16 @@
   justify-content: space-between;
   margin: 20px 0;
 }
+
+
+@media (max-width: 991.98px) { 
+  .container_modalcart {
+    width: 95vw;
+    position: absolute;
+    right: -20px;
+    clip-path: polygon(0 100%, 100% 100%, 100% 6%, 96% 6%, 92% 1%, 88% 6%, 0 6%)
+  }
+  .total_container {
+    padding: 0 30px;
+  }
+}

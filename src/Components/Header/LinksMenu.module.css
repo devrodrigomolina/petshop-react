@@ -9,6 +9,7 @@
   align-items: center;
   font-weight: bold;
   font-size: 1.1rem;
+  margin-right: 20px;
   text-transform: uppercase;
 }
 
@@ -19,16 +20,12 @@ a {
 a:hover {
   color: #f3d097;
 }
-.cart {
-  margin-left: 30px;
-}
 
 @media (max-width: 991.98px) {
   .ul {
     display: none;
   }
   .cart {
-
-    margin-right: 80px;
+    display: none;
   }
 }

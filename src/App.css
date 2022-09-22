@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 body {
@@ -38,5 +39,7 @@ img {
 @media (max-width: 991.98px) {
   .mobile_app {
     display: block;
+    position: absolute;
+    z-index: 999;
   }
 }

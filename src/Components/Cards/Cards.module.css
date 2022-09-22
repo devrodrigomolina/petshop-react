@@ -40,7 +40,7 @@
 @media (max-width: 991.98px) {
   .cards {
     width: 90%;
-    height: 300px;
+    height: 400px;
     flex-wrap: wrap;
   }
   .card {
