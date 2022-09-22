@@ -51,12 +51,7 @@ const Footer = () => {
           </div>
           <p style={{ textAlign: "center", marginTop: "35px" }}>
             Desenvolvido por{" "}
-            <Link
-              to="https://www.linkedin.com/in/devrodrigomolina/"
-              target="_blank"
-            >
-              Rodrigo Molina
-            </Link>
+            <a href="https://www.linkedin.com/in/devrodrigomolina/" target='_blank'>Rodrigo Molina</a>
           </p>
         </div>
         <img className={style.img} src={dog2} />
