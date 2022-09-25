@@ -34,7 +34,10 @@ const Modal = ({ produtos, imageId, setModal }) => {
           <img src={src} />
         </div>
         <div className={style.container_infos}>
-          <Title text={text} />
+          <div className={style.title}>
+
+            <Title text={text} />
+          </div>
           <div className={style.descricao}>
             {desc.map((desc) => (
               <p key={desc}>- {desc}</p>

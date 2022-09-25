@@ -55,3 +55,32 @@
   margin: 60px 0;
 }
 
+@media (max-width: 991.98px) {
+  .modal {
+    width: 90vw;
+  }
+  .container_infos {
+    width: 190px;
+    height: 100px;
+  }
+  .title {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    font-size: 1rem;
+    width: 85vw;
+    margin: 0 auto;
+  }
+  .p {
+    font-size: 2rem;
+  }
+.modal img {
+  max-width: none;
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+}
+.btns {
+  margin: 0;
+}
+}
