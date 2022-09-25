@@ -1,0 +1,50 @@
+.loading {
+  width: 100vw;
+  max-width: 85vw;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  letter-spacing: 0.8rem;
+  color: rgba(0, 0, 0, 0.719);
+  position: relative;
+}
+
+.text::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  width: 100%;
+  color: rgb(153, 58, 58);
+  background: #FAFAFA;
+  -webkit-animation: typing 4s forwards, caret 1s infinite;
+          animation: typing 4s  forwards, caret 1s infinite;
+}
+
+@-webkit-keyframes typing {
+  to {
+    width: 0;
+  }
+}
+@-webkit-keyframes caret {
+  50% {
+    color: transparent;
+  }
+}
+
+@keyframes typing {
+  to {
+    width: 0;
+  }
+}
+@keyframes caret {
+  50% {
+    color: transparent;
+  }
+
+}
