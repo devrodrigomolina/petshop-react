@@ -13,8 +13,8 @@ const ButtonsModal = ({ id, cartProdutoId }) => {
 
 
   const addItemCart = () =>
-    produtoCartQtd
-      ? setQuantidadeModalBtn((produtoCartQtd.quantidade = produtoCartQtd.quantidade + 1))
+    produtoCartQtd ?
+      setQuantidadeModalBtn((produtoCartQtd.quantidade = produtoCartQtd.quantidade + 1))
       : setQuantidadeModalBtn((produtoQtd.quantidade = produtoQtd.quantidade + 1));
 
   const removeItemCart = () => produtoQtd.quantidade != 1 && setQuantidadeModalBtn((produtoQtd.quantidade = produtoQtd.quantidade - 1));

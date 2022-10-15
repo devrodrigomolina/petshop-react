@@ -35,7 +35,6 @@ const Modal = ({ produtos, imageId, setModal }) => {
         </div>
         <div className={style.container_infos}>
           <div className={style.title}>
-
             <Title text={text} />
           </div>
           <div className={style.descricao}>
