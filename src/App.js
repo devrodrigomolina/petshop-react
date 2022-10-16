@@ -9,6 +9,7 @@ import QtdProvider from "./context/qtdContext";
 import MenuMobile from "./Components/Header/MenuMobile/MenuMobile";
 import { useEffect, useState } from "react";
 import { Loading } from "./Components/Loading/Loading";
+import Contato from "./Components/Pages/Contato/Contato";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -34,6 +35,7 @@ function App() {
             <Route path="/" element={<Home />}></Route>
             <Route path="/sobre" element={<Sobre />}></Route>
             <Route path="/loja" element={<Loja />}></Route>
+            <Route path="/contato" element={<Contato />}></Route>
           </Routes>
           <Footer />
         </BrowserRouter>

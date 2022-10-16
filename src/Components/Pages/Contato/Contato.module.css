@@ -1,0 +1,21 @@
+.container_form {
+  width: 100%;
+  display: flex;
+  justify-content: center
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 500px;
+  margin-top: 100px;
+  justify-content: space-around;
+}
+textarea {
+  resize: none
+}
+input {
+  width: 100%;
+  height: 50px;
+}
