@@ -48,21 +48,27 @@
   width: 100%;
   height: 100%;
 }
-.ButtonsModal {
+/* .ButtonsModal {
   margin-right: 50px;
-}
+} */
 
 .total_container {
   width: 100%;
   padding: 0 50px;
   border-top: 1px solid rgba(0, 0, 0, 0.151);
 }
-
+.iconRemove {
+  font-size: 1.5rem;
+  color: red;
+  cursor: pointer;
+}
 .total {
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 

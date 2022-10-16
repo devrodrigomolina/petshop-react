@@ -3,17 +3,22 @@ import style from "./ModalCart.module.css";
 import ButtonsModal from "./ButtonsModal/ButtonsModal";
 import Button from "../Button/Button";
 import { QtdContext } from "../../context/qtdContext";
-
+import { BiTrash } from 'react-icons/bi'
 const ModalCart = ({ modalCart }) => {
   const produtosCart = JSON.parse(localStorage.getItem("pet"));
-  const { quantidadeModalBtn } = useContext(QtdContext);
+  const { quantidadeModalBtn ,produtosSelecionados, setProdutosSelecionados } = useContext(QtdContext);
 
   const [precoTotal, setPrecoTotal] = useState(0);
-  const precoFinal = produtosCart.map(({price, quantidade}) => Number(price.replace("R$ ", "").replace(",", ".")) * quantidade)
+  const precoFinal = produtosSelecionados.map(({price, quantidade}) => Number(price.replace("R$ ", "").replace(",", ".")) * quantidade)
+
+  const removeItem = (itemId) => {
+    const prodRemove = produtosSelecionados.filter(produtoid => produtoid.id !== itemId)
+    setProdutosSelecionados(prodRemove)
+  }
 
   useEffect(() => {
     if(produtosCart.length) {
-      setPrecoTotal(precoFinal.reduce((a, b) => a + b))
+      setPrecoTotal(precoFinal.reduce((a, b) => a + b, 0))
     }
   }, [produtosCart.length, precoFinal, quantidadeModalBtn]);
 
@@ -34,6 +39,9 @@ const ModalCart = ({ modalCart }) => {
                 </div>
                 <div className={style.ButtonsModal}>
                   <ButtonsModal cartProdutoId={produtos.id} />
+                </div>
+                <div className={style.iconRemove}>
+                  <BiTrash onClick={() => removeItem(produtos.id)} />
                 </div>
               </div>
             ))}
