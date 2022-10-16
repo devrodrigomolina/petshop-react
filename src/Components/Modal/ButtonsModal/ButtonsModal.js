@@ -4,19 +4,28 @@ import style from "./ButtonsModal.module.css";
 import { produtos } from "../../Produtos/JsonProdutos";
 
 const ButtonsModal = ({ id, cartProdutoId }) => {
-  const [quantidadeModalBtn, setQuantidadeModalBtn] = useState(1)
+  const { setQuantidadeModalBtn } = useContext(QtdContext);
   const produtoQtd = produtos.find((produto) => produto.id === id);
-  const produtoCartQtd = produtos.find((produto) => produto.id === cartProdutoId);
+  const produtoCartQtd = produtos.find(
+    (produto) => produto.id === cartProdutoId
+  );
 
-  const getQuantidade = produtoCartQtd ? produtoCartQtd.quantidade : produtoQtd.quantidade;
+  const getQuantidade = produtoCartQtd
+    ? produtoCartQtd.quantidade
+    : produtoQtd.quantidade;
 
-  console.log(quantidadeModalBtn)
   const addItemCart = () =>
-    produtoCartQtd ?
-      setQuantidadeModalBtn((produtoCartQtd.quantidade = produtoCartQtd.quantidade + 1))
-      : setQuantidadeModalBtn((produtoQtd.quantidade = produtoQtd.quantidade + 1));
+    produtoCartQtd
+      ? setQuantidadeModalBtn(
+          (produtoCartQtd.quantidade = produtoCartQtd.quantidade + 1)
+        )
+      : setQuantidadeModalBtn(
+          (produtoQtd.quantidade = produtoQtd.quantidade + 1)
+        );
 
-  const removeItemCart = () => produtoCartQtd && produtoQtd.quantidade != 1 && setQuantidadeModalBtn((produtoQtd.quantidade = produtoQtd.quantidade - 1));
+  const removeItemCart = () =>
+    produtoCartQtd && produtoCartQtd.quantidade != 1 &&
+    setQuantidadeModalBtn((produtoCartQtd.quantidade = produtoCartQtd.quantidade - 1));
 
   return (
     <div className={style.select_qtd}>
