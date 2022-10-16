@@ -4,15 +4,13 @@ export const QtdContext = createContext();
 
 const QtdProvider = (props) => {
   const [produtosSelecionados, setProdutosSelecionados] = useState([]);
-  const [quantidadeModalBtn, setQuantidadeModalBtn] = useState(1)
-  localStorage.setItem("pet", JSON.stringify([]));
-
+ 
   useEffect(() => {
     localStorage.setItem("pet", JSON.stringify(produtosSelecionados));
   }, [produtosSelecionados]);
 
   return (
-    <QtdContext.Provider value={{ produtosSelecionados, setProdutosSelecionados, quantidadeModalBtn, setQuantidadeModalBtn }}>
+    <QtdContext.Provider value={{ produtosSelecionados, setProdutosSelecionados}}>
       {props.children}
     </QtdContext.Provider>
   );

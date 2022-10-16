@@ -2,9 +2,12 @@ import React, { useContext, useEffect, useState } from "react";
 import style from "./ModalCart.module.css";
 import ButtonsModal from "./ButtonsModal/ButtonsModal";
 import Button from "../Button/Button";
+import { QtdContext } from "../../context/qtdContext";
 
 const ModalCart = ({ modalCart }) => {
   const produtosCart = JSON.parse(localStorage.getItem("pet"));
+  const { quantidadeModalBtn } = useContext(QtdContext);
+
   const [precoTotal, setPrecoTotal] = useState(0);
   const precoFinal = produtosCart.map(({price, quantidade}) => Number(price.replace("R$ ", "").replace(",", ".")) * quantidade)
 
@@ -12,7 +15,7 @@ const ModalCart = ({ modalCart }) => {
     if(produtosCart.length) {
       setPrecoTotal(precoFinal.reduce((a, b) => a + b))
     }
-  }, [produtosCart.length]);
+  }, [produtosCart.length, precoFinal, quantidadeModalBtn]);
 
   return (
     <>
@@ -39,7 +42,7 @@ const ModalCart = ({ modalCart }) => {
           <div className={style.total_container}>
             <div className={style.total}>
               <p className={style.produto_preco}>Total:</p>
-              <p>R$: {precoTotal}</p>
+              <p>{precoTotal.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</p>
             </div>
             <Button
               text="FINALIZAR COMPRA"
