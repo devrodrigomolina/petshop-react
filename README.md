@@ -1,7 +1,7 @@
 # Projeto WOOOF PETSHOP
 
 - 🖥️ Este projeto é um marketplace voltado a petshop, Fornecemos linhas de produtos especializados,
-      tais como cozinha orgânica, ração natural para grupos em lotes pequenos e uma seleção ampla de guloseimas para cães e gatos.
+      tais como comida orgânica, ração natural para e uma seleção ampla de guloseimas para cães e gatos.
 
 ##
 
