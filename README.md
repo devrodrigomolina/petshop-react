@@ -18,8 +18,14 @@
   
  ## APRESENTAÇÃO
 
- 
-![image](https://user-images.githubusercontent.com/75998678/196314460-0cfa501f-d5ea-4b33-a680-d49606683fcb.png)(https://youtu.be/T8Zr4nVHDO8)
+<h3>VIDEO NO YOUTUBE: </h3>
+
+https://youtu.be/T8Zr4nVHDO8
+
+
+<h3> IMAGEM DO PROJETO: </h3>
+
+![image](https://user-images.githubusercontent.com/75998678/196314925-5285b275-0e41-420f-b97d-d5f61a21a5c4.png)
 
 
 
